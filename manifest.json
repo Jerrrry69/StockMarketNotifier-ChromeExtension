@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Stock Market Notifier",
+  "version": "1.0",
+  "description": "Real-time stock market opening/closing times with notifications",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "512": "icons/icon512.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon512.png",
+    "48": "icons/icon512.png",
+    "128": "icons/icon512.png",
+    "512": "icons/icon512.png"
+  },
+  "permissions": ["notifications", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

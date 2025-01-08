@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+  min-width: 300px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  margin-right: 8px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+#theme-toggle {
+  margin-left: auto;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.current-time {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.language-selector {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#language-select {
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.stock-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.market-item {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.market-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.market-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.market-time {
+  font-size: 12px;
+  color: #666;
+}
+
+.local-time {
+  font-size: 11px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.dark-mode .market-time {
+  color: #aaa;
+}
+
+.dark-mode .local-time {
+  color: #999;
+}
+
+.settings-btn {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode .market-item {
+  border-color: #444;
+}
+
+.dark-mode .settings-btn {
+  border-color: #444;
+  color: #fff;
+}
+
+.market-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-left: auto;
+}
+
+.alarm-clock-icon, .menu-burger-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.market-status-icon {
+  font-size: 18px;
+  margin-right: 8px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Market Notifier</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="icons/icon512.svg" alt="Icon" style="width: 32px; height: 32px; vertical-align: middle;">
+      <h1 id="title">股市时间通知</h1>
+      <button id="theme-toggle" style="margin-left: auto;">🌜</button>
+    </header>
+
+    <div class="current-time">
+      <span id="current-time"></span>
+    </div>
+
+    <div class="language-selector">
+      <label id="language-label">选择语言</label>
+      <select id="language-select">
+        <option value="zh">中文</option>
+        <option value="en">English</option>
+        <option value="ja">日本語</option>
+      </select>
+    </div>
+
+    <div id="stock-list" class="stock-list">
+      <!-- Stock market items will be dynamically inserted here -->
+      <div class="market-item">
+        <div>
+          <strong>市场名称 (国家)</strong><br/>
+          开盘: 9:30 AM, 收盘: 4:00 PM<br/>
+          盘前: 7:00 AM, 盘后: 8:00 PM
+        </div>
+      <div class="market-controls">
+        <button onclick="window.location.href='settings.html'">设置</button>
+      </div>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
